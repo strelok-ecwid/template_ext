@@ -1,19 +1,28 @@
 {
   "name": "Шаблоны",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo8NPtc/ATDo39tCnxaBKPn4WNqiq4FD+cMWPHeEBhsMVScY3zEoCjiNw26ylBar1s5MntafzP/w5pQtkeuIP/55n3dhe89LEGXQDCHU5hT5jPTjz+6xPf/5/via2ybbxh5GCNz4env/WTsH33ZAR5umEgiSSqDV4Vv0uzoEHM6IpJ2dy4qagLvu+Axf0V7mGeVmbn9wmvIrWmn715+XQDwx6A+oZ+WyRSNQ+7zKb5/lw9xwXwsn34uIwPEPgowkPFxMEHcRXP1vW3hCYcmQMyEyzKRKWqC5asP/9BVRuuJLfKk9yReppIiRI49V8DqZi3DrJsm6Vs+XLx00B5g4eLQIDAQAB",
+  
+  "oauth2": {
+    "client_id": "711188769175-6v5t3h72cgkmkl7t1sdbis9d8bulr069.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/documents",
+      "https://docs.googleapis.com/v1/documents",
+      "https://www.googleapis.com/auth/drive",
+      "https://www.googleapis.com/auth/drive.file"
+    ]
+  },
   "description": "Шаблоны для QA",
   "version": "0.1",
   "manifest_version": 3,
   "permissions": [
+    "identity",
     "activeTab",
     "scripting",
     "tabs",
     "storage",
-    "notifications"    
+    "notifications"
   ],
-  "host_permissions":[
-    "http://*/",
-    "https://*/"
-  ],
+  "host_permissions": ["http://*/", "https://*/"],
   "background": {
     "service_worker": "background.js"
   },
